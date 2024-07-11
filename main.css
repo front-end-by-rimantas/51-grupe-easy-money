@@ -1,20 +1,30 @@
 body {
+    margin: 0;
+    background-color: aquamarine;
 }
 
-header {
+header,
+main > section:nth-child(1),
+main > section:nth-child(2) {
+    display: inline-block;
+    width: 800px;
+    margin-left: calc(50% - 400px);
 }
 
 main {
+    margin-top: 60px;
 }
 
-section:first-child {
+main > section + section {
+    margin-top: 60px;
 }
 
 div {
+    float: left;
+    width: 35%;
 }
 
 img {
-}
-
-section:last-child {
+    float: right;
+    width: 55%;
 }
