@@ -24,7 +24,7 @@ div {
     width: 35%;
 }
 
-img {
+section > img {
     float: right;
     width: 55%;
 }
