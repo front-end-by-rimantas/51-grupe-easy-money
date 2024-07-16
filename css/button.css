@@ -7,10 +7,44 @@
     line-height: 2em;
     text-decoration: none;
     border-radius: 0.5em;
-    border: 0.1em solid transparent;
+    border: 0.1em solid black;
+    user-select: none;
 }
 .btn:hover {
     background-color: white;
     color: black;
     border-color: currentColor;
+}
+
+.btn.btn-big {
+    padding: 0.7em 1.5em;
+    border-radius: 0.7em;
+}
+
+.btn.btn-blue {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+.btn.btn-blue:hover {
+    background-color: white;
+    color: blue;
+}
+.btn.btn-blue.btn-disabled,
+.btn.btn-blue[disabled] {
+    background-color: lightblue;
+    color: white;
+    border-color: lightblue;
+    cursor: default;
+    pointer-events: none;
+}
+
+.btn.btn-white {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.btn.btn-white:hover {
+    background-color: black;
+    color: white;
 }
