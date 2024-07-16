@@ -10,7 +10,7 @@ body {
     width: 800px;
     margin-left: calc(50% - 400px);
 }
-header {
+header.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,18 +20,25 @@ header {
 .logo {
     height: 30px;
 }
-header > nav {
+.main-nav {
     display: flex;
     gap: 30px;
 }
-
-header > nav > a {
+.link {
     font-size: 20px;
     line-height: 1em;
     text-decoration: none;
     color: grey;
 }
-header > a {
+.link:hover {
+    color: black;
+    text-decoration: underline;
+}
+.link.active {
+    color: black;
+    text-decoration: none;
+}
+.btn {
     padding: 0.3em 1em;
     background-color: black;
     color: white;
@@ -39,22 +46,28 @@ header > a {
     line-height: 2em;
     text-decoration: none;
     border-radius: 0.5em;
+    border: 0.1em solid transparent;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
 }
 
-main {
+.main {
     margin-top: 60px;
 }
 
-main > section + section {
+.main > .container + .container {
     margin-top: 60px;
 }
 
-div {
+.texts {
     float: left;
     width: 35%;
 }
 
-section > img {
+.hero-img {
     float: right;
     width: 55%;
 }
