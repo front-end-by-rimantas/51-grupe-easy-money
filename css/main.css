@@ -16,3 +16,20 @@ body {
 .main > .container + .container {
     margin-top: 60px;
 }
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.main-footer > div {
+    display: flex;
+    gap: 20px;
+}
+.main-footer > div > a {
+    font-size: 20px;
+}
+.main-footer > p {
+    margin: 0;
+}

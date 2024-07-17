@@ -13,14 +13,14 @@
 .hero .badge > svg {
     width: 20px;
     height: 20px;
-    color: green;
+    color: #00cd3d;
 }
 .hero .main-title {
     font-size: 42px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .hero .main-title > span {
-    color: blue;
+    color: #1e78f0;
 }
 .hero .description {
     font-size: 18px;

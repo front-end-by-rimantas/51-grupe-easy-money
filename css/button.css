@@ -22,13 +22,13 @@
 }
 
 .btn.btn-blue {
-    background-color: blue;
+    background-color: #1e78f0;
     color: white;
-    border-color: blue;
+    border-color: #1e78f0;
 }
 .btn.btn-blue:hover {
     background-color: white;
-    color: blue;
+    color: #1e78f0;
 }
 .btn.btn-blue.btn-disabled,
 .btn.btn-blue[disabled] {

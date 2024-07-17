@@ -6,8 +6,14 @@
 .trio-list .trio {
     width: 150px;
     padding: 20px;
-    background-color: pink;
+    background-color: #e9f3ff;
     border-radius: 20px;
+}
+.trio-list .trio:nth-child(2) {
+    background-color: #faeff6;
+}
+.trio-list .trio:nth-child(3) {
+    background-color: #f2ecff;
 }
 
 .trio-list .img {
@@ -24,4 +30,12 @@
 }
 
 .trio-list .description {
+    font-size: 17px;
+    color: #779ce5;
+}
+.trio-list .trio:nth-child(2) .description {
+    color: #c3648d;
+}
+.trio-list .trio:nth-child(3) .description {
+    color: #8885f6;
 }
