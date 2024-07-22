@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #00cd3d;
     position: relative;
 }
 .hero .texts {
@@ -33,9 +32,38 @@
     display: inline-block;
     color: red;
     padding: 0 10px;
-    border: 5px solid red;
+    border: 2px solid red;
     transform: rotate(-10deg);
 }
+.crazy::before,
+.crazy::after,
+.crazy .sqr::before,
+.crazy .sqr::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border: 2px solid red;
+    position: absolute;
+}
+.crazy::before {
+    top: -7px;
+    left: -7px;
+}
+.crazy::after {
+    top: -7px;
+    right: -7px;
+}
+.crazy .sqr::before {
+    bottom: -7px;
+    left: -7px;
+}
+.crazy .sqr::after {
+    bottom: -7px;
+    right: -7px;
+}
+
 .hero .description {
     font-size: 18px;
     color: grey;

@@ -5,6 +5,13 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
     overflow-x: hidden;
+    background: linear-gradient(
+        65deg,
+        #ff7d7d 0%,
+        #ffffff 20%,
+        #ffffff 80%,
+        #7878ff 100%
+    );
 }
 
 .container {
@@ -38,13 +45,28 @@ body {
     align-items: center;
     margin-top: 60px;
 }
-.main-footer > div {
+.main-footer .socials {
     display: flex;
-    gap: 20px;
+    gap: 5px;
 }
-.main-footer > div > a {
+.main-footer .socials > a {
+    padding: 10px;
     font-size: 20px;
+    text-decoration: none;
+    color: #36f;
+}
+.main-footer .socials > a:hover {
+    background-color: #36f;
+    color: #fff;
 }
 .main-footer > p {
     margin: 0;
+}
+
+.extra {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 40px;
+    border: 2px solid red;
+    position: relative;
 }
